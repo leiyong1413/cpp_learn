@@ -47,7 +47,15 @@
 - p2p p2p通信
 - cpp 编程规划
 
-
+## BOOKS ##
+- efficientc++
+- inside the c++ object model
+- 设计模式
+- large-scale c++ software design
+- effective stl
+- c++ 多范形设计
+- c++ 代码设计与重用
+- boost程序设计
 ## 库 ##
 
 - Boost
