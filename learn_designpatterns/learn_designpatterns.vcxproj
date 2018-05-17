@@ -115,6 +115,36 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="design_pattern\behavioral\chain_of_responsibility\doc.h" />
+    <ClInclude Include="design_pattern\behavioral\command\doc.h" />
+    <ClInclude Include="design_pattern\behavioral\interpreter\interpreter.h" />
+    <ClInclude Include="design_pattern\behavioral\iterator\doc.h" />
+    <ClInclude Include="design_pattern\behavioral\mediator\doc.h" />
+    <ClInclude Include="design_pattern\behavioral\memento\doc.h" />
+    <ClInclude Include="design_pattern\behavioral\observer\doc.h" />
+    <ClInclude Include="design_pattern\behavioral\state\doc.h" />
+    <ClInclude Include="design_pattern\behavioral\strategy\doc.h" />
+    <ClInclude Include="design_pattern\behavioral\template_method\doc.h" />
+    <ClInclude Include="design_pattern\behavioral\visitor\doc.h" />
+    <ClInclude Include="design_pattern\creational\abstract_factory\doc.h" />
+    <ClInclude Include="design_pattern\creational\builder\doc.h" />
+    <ClInclude Include="design_pattern\creational\factory_method\doc.h" />
+    <ClInclude Include="design_pattern\creational\prototype\doc.h" />
+    <ClInclude Include="design_pattern\creational\simple_factory\simple_factory.h" />
+    <ClInclude Include="design_pattern\creational\singleton\doc.h" />
+    <ClInclude Include="design_pattern\creational\singleton\singleton.h" />
+    <ClInclude Include="design_pattern\structural\adapter\doc.h" />
+    <ClInclude Include="design_pattern\structural\bridge\doc.h" />
+    <ClInclude Include="design_pattern\structural\composite\doc.h" />
+    <ClInclude Include="design_pattern\structural\decorator\doc.h" />
+    <ClInclude Include="design_pattern\structural\facade\doc.h" />
+    <ClInclude Include="design_pattern\structural\flyweight\doc.h" />
+    <ClInclude Include="design_pattern\structural\proxy\doc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="design_pattern\creational\simple_factory\simple_factory.cpp" />
+    <ClCompile Include="design_pattern\creational\singleton\singleton.cpp" />
+    <ClCompile Include="design_pattern\main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

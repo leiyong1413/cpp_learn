@@ -13,5 +13,135 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\boost">
+      <UniqueIdentifier>{6720f7f3-852e-4746-ba68-3c8595ea2770}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\boost">
+      <UniqueIdentifier>{a86db30e-0144-47d1-9e59-cdfb0df24e29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\boost\string_text">
+      <UniqueIdentifier>{75e1a50f-7172-4d6e-8e2b-68186f8f01fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\boost\assert_test">
+      <UniqueIdentifier>{8ed7d93e-423a-4606-a465-dea5964a4181}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\boost\container">
+      <UniqueIdentifier>{306211d8-5db8-452b-937b-c385e083a666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\boost\number">
+      <UniqueIdentifier>{cb7334dd-6e3e-493d-8bc1-9738eb163b6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\boost\os">
+      <UniqueIdentifier>{02f3f78e-ef31-42e5-a620-617bd4960c40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\boost\function_callback">
+      <UniqueIdentifier>{a765154d-14a4-48f6-89ed-6677ed8dafe8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\boost\concurrency">
+      <UniqueIdentifier>{41c6d810-5c5f-4465-aded-99a6dceb2a57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\boost\design_pattern">
+      <UniqueIdentifier>{d5921042-53b1-4801-9e22-cfa3406faade}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\boost\algorithm">
+      <UniqueIdentifier>{1385747d-a149-44d5-b3ee-124b203bb1fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\boost\date_time">
+      <UniqueIdentifier>{fc6a5b6f-4299-46db-959e-a1fb9fb499ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\boost\date_time">
+      <UniqueIdentifier>{9de57899-c846-4e51-9338-b6e76cde7e09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\boost\timer">
+      <UniqueIdentifier>{7aa8cdfa-0e78-4231-8374-8b19bb48103a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\boost\timer">
+      <UniqueIdentifier>{597580ea-cebd-4cd8-81ac-18946d179655}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\boost\progress">
+      <UniqueIdentifier>{f09d7e4e-de5b-42a7-9211-c77b3bf43f23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\boost\progress">
+      <UniqueIdentifier>{fe50c23f-30be-4679-84de-7f150172d2c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\boost\memory">
+      <UniqueIdentifier>{afd630ac-221e-4737-afa6-e6e6a49a5167}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\boost\memory\smart_ptr">
+      <UniqueIdentifier>{8c9c12e1-709d-49c4-8ff2-0bc732810bfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\boost\memory">
+      <UniqueIdentifier>{1f0fa9b7-5e1d-4c98-896c-177bc4e019d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\boost\memory\smart_ptr">
+      <UniqueIdentifier>{f0d58f52-1fcd-436c-b5b7-ad484b60caad}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="boost\string_text\doc.h">
+      <Filter>头文件\boost\string_text</Filter>
+    </ClInclude>
+    <ClInclude Include="boost\assert_test\doc.h">
+      <Filter>头文件\boost\assert_test</Filter>
+    </ClInclude>
+    <ClInclude Include="boost\container\doc.h">
+      <Filter>头文件\boost\container</Filter>
+    </ClInclude>
+    <ClInclude Include="boost\number\doc.h">
+      <Filter>头文件\boost\number</Filter>
+    </ClInclude>
+    <ClInclude Include="boost\os\doc.h">
+      <Filter>头文件\boost\os</Filter>
+    </ClInclude>
+    <ClInclude Include="boost\function_callback\doc.h">
+      <Filter>头文件\boost\function_callback</Filter>
+    </ClInclude>
+    <ClInclude Include="boost\concurrency\doc.h">
+      <Filter>头文件\boost\concurrency</Filter>
+    </ClInclude>
+    <ClInclude Include="boost\design_pattern\doc.h">
+      <Filter>头文件\boost\design_pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="boost\algorithm\doc.h">
+      <Filter>头文件\boost\algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="boost\index.h">
+      <Filter>头文件\boost</Filter>
+    </ClInclude>
+    <ClInclude Include="boost\timer\timer.h">
+      <Filter>头文件\boost\timer</Filter>
+    </ClInclude>
+    <ClInclude Include="boost\progress\progress.h">
+      <Filter>头文件\boost\progress</Filter>
+    </ClInclude>
+    <ClInclude Include="boost\date_time\date_time.h">
+      <Filter>头文件\boost\date_time</Filter>
+    </ClInclude>
+    <ClInclude Include="boost\memory\smart_ptr\smart_ptr.h">
+      <Filter>头文件\boost\memory\smart_ptr</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="boost\main.cpp">
+      <Filter>源文件\boost</Filter>
+    </ClCompile>
+    <ClCompile Include="boost\index.cpp">
+      <Filter>源文件\boost</Filter>
+    </ClCompile>
+    <ClCompile Include="boost\timer\timer.cpp">
+      <Filter>源文件\boost\timer</Filter>
+    </ClCompile>
+    <ClCompile Include="boost\progress\progress.cpp">
+      <Filter>源文件\boost\progress</Filter>
+    </ClCompile>
+    <ClCompile Include="boost\date_time\date_time.cpp">
+      <Filter>源文件\boost\date_time</Filter>
+    </ClCompile>
+    <ClCompile Include="boost\memory\smart_ptr\smart_ptr.cpp">
+      <Filter>源文件\boost\memory\smart_ptr</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>

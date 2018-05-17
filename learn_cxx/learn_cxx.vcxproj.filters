@@ -13,5 +13,54 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\cxx">
+      <UniqueIdentifier>{5e0aa79c-2517-4d86-9f24-0ae81bd3603a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\cxx">
+      <UniqueIdentifier>{b066e841-a581-4908-8d75-5de19514093a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\cxx\basic">
+      <UniqueIdentifier>{dd96381d-863e-4ddb-8558-4f503fd243f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\cxx\basic">
+      <UniqueIdentifier>{e84a020b-cb1b-41e9-ba1d-8d814d62f3d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\cxx\basic\data_type">
+      <UniqueIdentifier>{9bca9c0a-31f2-4cad-ad77-8da4ad3cbeb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\cxx\basic\data_type">
+      <UniqueIdentifier>{e9e351e2-6491-45ac-b54a-5d25f43fbfce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\cxx\cxx11">
+      <UniqueIdentifier>{6c925018-edfb-4045-b269-b94a54314fce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\cxx\cxx11">
+      <UniqueIdentifier>{a9f80469-53e9-434e-bb78-0c78c5fc2119}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\cxx\cxx11\user_defined_literal">
+      <UniqueIdentifier>{9c6b7ab3-3a57-438e-99e6-adbe7e8d7087}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\cxx\cxx11\user_defined_literal">
+      <UniqueIdentifier>{a94150f7-bf37-4952-b036-406abb830022}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cxx\basic\data_type\data_type.h">
+      <Filter>头文件\cxx\basic\data_type</Filter>
+    </ClInclude>
+    <ClInclude Include="cxx\cxx11\user_defined_literal\user_defined_literal.h">
+      <Filter>头文件\cxx\cxx11\user_defined_literal</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cxx\main.cpp">
+      <Filter>源文件\cxx</Filter>
+    </ClCompile>
+    <ClCompile Include="cxx\basic\data_type\data_type.cpp">
+      <Filter>源文件\cxx\basic\data_type</Filter>
+    </ClCompile>
+    <ClCompile Include="cxx\cxx11\user_defined_literal\user_defined_literal.cpp">
+      <Filter>源文件\cxx\cxx11\user_defined_literal</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

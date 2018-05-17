@@ -18,6 +18,15 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cxx\basic\data_type\data_type.h" />
+    <ClInclude Include="cxx\cxx11\user_defined_literal\user_defined_literal.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cxx\basic\data_type\data_type.cpp" />
+    <ClCompile Include="cxx\cxx11\user_defined_literal\user_defined_literal.cpp" />
+    <ClCompile Include="cxx\main.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{AC6B0670-8F33-4515-8E32-156C8DD5E326}</ProjectGuid>
@@ -108,14 +117,13 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\dev\learn\cpp_learn\learn_cxx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

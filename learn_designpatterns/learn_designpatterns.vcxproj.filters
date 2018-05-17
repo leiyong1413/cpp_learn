@@ -13,5 +13,192 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\design_pattern">
+      <UniqueIdentifier>{5402483e-6fdf-45c5-a789-fa3582185d60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\design_pattern">
+      <UniqueIdentifier>{9ace8cce-10f1-48e4-9f13-efeb1c0cc213}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\design_pattern\creational">
+      <UniqueIdentifier>{b156666b-7905-491c-bd0a-2045a0a6ccb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\design_pattern\structural">
+      <UniqueIdentifier>{51624bb2-bad5-47e0-9b7c-dfb9ae1d68c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\design_pattern\behavioral">
+      <UniqueIdentifier>{888211eb-a790-4d0b-894a-3c96f395655f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\design_pattern\creational\abstract_factory">
+      <UniqueIdentifier>{30d7da6b-dad1-4697-8edf-5b9f70aa79c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\design_pattern\creational\builder">
+      <UniqueIdentifier>{43e0d59d-4a9b-44bf-a639-59cbb68df2a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\design_pattern\creational\prototype">
+      <UniqueIdentifier>{0e67818f-b06a-479c-bb75-a7ffbc1eea47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\design_pattern\creational\singleton">
+      <UniqueIdentifier>{b703998f-3327-452b-acd1-d5071e036cf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\design_pattern\creational\factory_method">
+      <UniqueIdentifier>{98dc366b-c1d8-4bbb-9ea8-3a8d6de7bed8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\design_pattern\creational\simple_factory">
+      <UniqueIdentifier>{9f5c9f59-41f6-4534-92a1-ad1294a51030}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\design_pattern\structural\bridge">
+      <UniqueIdentifier>{0f38aea3-e0ff-488f-92fe-741da5231262}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\design_pattern\structural\adapter">
+      <UniqueIdentifier>{37afd5af-c0e4-4aa8-aad8-c5a471de6f0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\design_pattern\structural\proxy">
+      <UniqueIdentifier>{38d69061-aaa7-4a19-954c-f82860a451ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\design_pattern\structural\facade">
+      <UniqueIdentifier>{309f173d-25cb-4aec-b840-88271b276670}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\design_pattern\structural\composite">
+      <UniqueIdentifier>{3a4b2bef-96a3-4d2b-9ee8-fbb61bb5ad55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\design_pattern\structural\decorator">
+      <UniqueIdentifier>{80cb267d-9413-4476-81cc-0ffdb43ff826}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\design_pattern\structural\flyweight">
+      <UniqueIdentifier>{df96fd24-96fb-4adc-9955-7edec483fdda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\design_pattern\behavioral\interpreter">
+      <UniqueIdentifier>{db546b88-d69d-4c56-b977-a8c68474ce58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\design_pattern\behavioral\template_method">
+      <UniqueIdentifier>{76638af7-ae8a-4dcf-96eb-572fd434bbfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\design_pattern\behavioral\chain_of_responsibility">
+      <UniqueIdentifier>{8b404e2b-b6aa-4159-a183-bd945cd79be2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\design_pattern\behavioral\command">
+      <UniqueIdentifier>{27ba76dd-d801-41c8-bdab-c026df28aad9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\design_pattern\behavioral\iterator">
+      <UniqueIdentifier>{b960fcf7-26b1-45bb-bc40-831bdd27fd2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\design_pattern\behavioral\mediator">
+      <UniqueIdentifier>{4dfca35b-ffc2-43e7-93b9-71e394132afb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\design_pattern\behavioral\memento">
+      <UniqueIdentifier>{7486e1f9-d689-43d4-8b9f-4670bd4cdd65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\design_pattern\behavioral\observer">
+      <UniqueIdentifier>{eb105562-bf61-448a-a5cb-e47689097024}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\design_pattern\behavioral\state">
+      <UniqueIdentifier>{b651fe44-6352-45e8-8e6d-e897f714073e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\design_pattern\behavioral\strategy">
+      <UniqueIdentifier>{e9106a53-461a-4cdf-b7f2-ba8ce9877c10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\design_pattern\behavioral\visitor">
+      <UniqueIdentifier>{9521e981-1771-4e69-af97-7ae2bafeddfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\design_pattern\creational">
+      <UniqueIdentifier>{42c0f083-7c58-4384-8c5e-dbb1f419d029}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\design_pattern\creational\singleton">
+      <UniqueIdentifier>{6fb12523-7367-4528-9bfe-dae0377d3155}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\design_pattern\test">
+      <UniqueIdentifier>{9f0d9742-401d-42ef-9a2a-5e7fbb91e372}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\design_pattern\creational\simple_factory">
+      <UniqueIdentifier>{b6efa7f6-2610-4d70-9d46-de0810eb61c0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="design_pattern\creational\abstract_factory\doc.h">
+      <Filter>头文件\design_pattern\creational\abstract_factory</Filter>
+    </ClInclude>
+    <ClInclude Include="design_pattern\creational\builder\doc.h">
+      <Filter>头文件\design_pattern\creational\builder</Filter>
+    </ClInclude>
+    <ClInclude Include="design_pattern\creational\prototype\doc.h">
+      <Filter>头文件\design_pattern\creational\prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="design_pattern\creational\singleton\doc.h">
+      <Filter>头文件\design_pattern\creational\singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="design_pattern\creational\factory_method\doc.h">
+      <Filter>头文件\design_pattern\creational\factory_method</Filter>
+    </ClInclude>
+    <ClInclude Include="design_pattern\creational\simple_factory\simple_factory.h">
+      <Filter>头文件\design_pattern\creational\simple_factory</Filter>
+    </ClInclude>
+    <ClInclude Include="design_pattern\structural\bridge\doc.h">
+      <Filter>头文件\design_pattern\structural\bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="design_pattern\structural\adapter\doc.h">
+      <Filter>头文件\design_pattern\structural\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="design_pattern\structural\proxy\doc.h">
+      <Filter>头文件\design_pattern\structural\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="design_pattern\structural\facade\doc.h">
+      <Filter>头文件\design_pattern\structural\facade</Filter>
+    </ClInclude>
+    <ClInclude Include="design_pattern\structural\composite\doc.h">
+      <Filter>头文件\design_pattern\structural\composite</Filter>
+    </ClInclude>
+    <ClInclude Include="design_pattern\structural\decorator\doc.h">
+      <Filter>头文件\design_pattern\structural\decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="design_pattern\structural\flyweight\doc.h">
+      <Filter>头文件\design_pattern\structural\flyweight</Filter>
+    </ClInclude>
+    <ClInclude Include="design_pattern\behavioral\interpreter\interpreter.h">
+      <Filter>头文件\design_pattern\behavioral\interpreter</Filter>
+    </ClInclude>
+    <ClInclude Include="design_pattern\behavioral\template_method\doc.h">
+      <Filter>头文件\design_pattern\behavioral\template_method</Filter>
+    </ClInclude>
+    <ClInclude Include="design_pattern\behavioral\chain_of_responsibility\doc.h">
+      <Filter>头文件\design_pattern\behavioral\chain_of_responsibility</Filter>
+    </ClInclude>
+    <ClInclude Include="design_pattern\behavioral\command\doc.h">
+      <Filter>头文件\design_pattern\behavioral\command</Filter>
+    </ClInclude>
+    <ClInclude Include="design_pattern\behavioral\iterator\doc.h">
+      <Filter>头文件\design_pattern\behavioral\iterator</Filter>
+    </ClInclude>
+    <ClInclude Include="design_pattern\behavioral\mediator\doc.h">
+      <Filter>头文件\design_pattern\behavioral\mediator</Filter>
+    </ClInclude>
+    <ClInclude Include="design_pattern\behavioral\memento\doc.h">
+      <Filter>头文件\design_pattern\behavioral\memento</Filter>
+    </ClInclude>
+    <ClInclude Include="design_pattern\behavioral\observer\doc.h">
+      <Filter>头文件\design_pattern\behavioral\observer</Filter>
+    </ClInclude>
+    <ClInclude Include="design_pattern\behavioral\state\doc.h">
+      <Filter>头文件\design_pattern\behavioral\state</Filter>
+    </ClInclude>
+    <ClInclude Include="design_pattern\behavioral\strategy\doc.h">
+      <Filter>头文件\design_pattern\behavioral\strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="design_pattern\behavioral\visitor\doc.h">
+      <Filter>头文件\design_pattern\behavioral\visitor</Filter>
+    </ClInclude>
+    <ClInclude Include="design_pattern\creational\singleton\singleton.h">
+      <Filter>头文件\design_pattern\creational\singleton</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="design_pattern\creational\singleton\singleton.cpp">
+      <Filter>源文件\design_pattern\creational\singleton</Filter>
+    </ClCompile>
+    <ClCompile Include="design_pattern\creational\simple_factory\simple_factory.cpp">
+      <Filter>源文件\design_pattern\creational\simple_factory</Filter>
+    </ClCompile>
+    <ClCompile Include="design_pattern\main.cpp">
+      <Filter>源文件\design_pattern</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

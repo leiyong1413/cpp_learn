@@ -47,6 +47,41 @@
 - p2p p2p通信
 - cpp 编程规划
 
+## design pattern ##
+
+- creational 创建型模式，在不同的场景下，如何优雅的创建对象
+
+	- factory method 工厂方法模式
+	- abstract factory 抽象工厂模式
+	- builder 建造者模式
+	- prototype 原型模式
+	- singleton 单列模式
+
+- behavioral 行为型模式，对象如何更好的执行方法，对象如何与其他对象交互，对象间如何协同
+
+	- interpreter 解释器模式
+	- template method  模板方法模式
+	- chain of responsibility 责任链模式
+	- command 命令模式
+	- iterator 迭代器模式
+	- mediator 中介者模式
+	- memento 备忘录模式
+	- observer 观察者模式
+	- state 状态模式
+	- strategy 策略模式
+	- visitor 访问者模式
+
+- structural 结构型模式，如何安全、统一的对对象进行访问或修改
+
+	- adapter 适配器模式
+	- bridge 桥梁、桥接模式
+	- composite 组合模式
+	- decorator 装饰模式
+	- facade 门面、外观模式
+	- flyweight 享元模式
+	- proxy 代理模式
+
+
 ## BOOKS ##
 - efficientc++
 - inside the c++ object model
