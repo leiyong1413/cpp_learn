@@ -4,9 +4,7 @@
 #include <iostream>
 #include <mutex>
 
-namespace learn {
-	namespace design_pattern {
-		namespace creational {
+namespace learn_design_pattern {
 
 			// 懒汉实现：故名思义，不到万不得已就不会去实例化类，也就是说在第一次用到类实例的时候才会去实例化
 			// 非线程安全,两个线程同时首次调用Instance方法且同时检测到p是NULL值，则两个线程会同时构造一个实例给p
@@ -84,10 +82,8 @@ namespace learn {
 				// 注意 类静态成员变量必须在类外初始化
 				// 所以必须在cpp中初始化
 				static SingletonWithLock* instance_;
-			};
+			};			
 
-		} // namespace creational
-	} // namespace design_pattern
-} // namespace learn
+} // namespace learn_design_pattern
 
 #endif // LEARN_DESIGN_PATTERN_CREATIONAL_SINGLETON_SINGLETON_H__

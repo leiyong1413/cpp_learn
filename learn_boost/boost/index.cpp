@@ -11,26 +11,29 @@ namespace learn_boost {
 	IRunUseCase* UseCaseSimpleFactory::Create(const UseCaseIndex &index) {
 		IRunUseCase * use_case = 0;
 
-		switch (index)
-		{
-		case learn_boost::NONE:
+		switch (index) {
+		case learn_boost::kNone:
 			break;
-		case learn_boost::TIMER:
+		case learn_boost::kTimer:
 			use_case = new learn_boost::Timer();
 			break;
-		case learn_boost::PROGRESS:
+		case learn_boost::kProgress: {
 			use_case = new learn_boost::ProgressTimer();
 			break;
-		case learn_boost::DATE_TIME_GREGORIAN:
+		}
+		case learn_boost::kDateTimeGregorian: {
 			use_case = new learn_boost::DateTimeGregorian();
 			break;
-		case learn_boost::DATE_TIME_POSIX_TIME:
+		}
+		case learn_boost::kDateTimePosixTime: {
 			use_case = new learn_boost::DateTimePosixtime();
 			break;
-		case learn_boost::MEMORY_SMART_PTR:
+		}
+		case learn_boost::kMemorySmartPtr: {
 			use_case = new learn_boost::SmartPtr();
 			break;
-		case learn_boost::COUNT:
+		}
+		case learn_boost::kCount:
 			break;
 		default:
 			break;

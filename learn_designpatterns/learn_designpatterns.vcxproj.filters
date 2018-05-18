@@ -106,9 +106,6 @@
     <Filter Include="源文件\design_pattern\creational\singleton">
       <UniqueIdentifier>{6fb12523-7367-4528-9bfe-dae0377d3155}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\design_pattern\test">
-      <UniqueIdentifier>{9f0d9742-401d-42ef-9a2a-5e7fbb91e372}</UniqueIdentifier>
-    </Filter>
     <Filter Include="源文件\design_pattern\creational\simple_factory">
       <UniqueIdentifier>{b6efa7f6-2610-4d70-9d46-de0810eb61c0}</UniqueIdentifier>
     </Filter>
@@ -189,6 +186,21 @@
     <ClInclude Include="design_pattern\creational\singleton\singleton.h">
       <Filter>头文件\design_pattern\creational\singleton</Filter>
     </ClInclude>
+    <ClInclude Include="design_pattern\behavioral\behavioural.h">
+      <Filter>头文件\design_pattern\behavioral</Filter>
+    </ClInclude>
+    <ClInclude Include="design_pattern\creational\creational.h">
+      <Filter>头文件\design_pattern\creational</Filter>
+    </ClInclude>
+    <ClInclude Include="design_pattern\structural\structural.h">
+      <Filter>头文件\design_pattern\structural</Filter>
+    </ClInclude>
+    <ClInclude Include="design_pattern\use_case.h">
+      <Filter>头文件\design_pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="design_pattern\creational\singleton\singleton_usecase.h">
+      <Filter>头文件\design_pattern\creational\singleton</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="design_pattern\creational\singleton\singleton.cpp">
@@ -200,5 +212,14 @@
     <ClCompile Include="design_pattern\main.cpp">
       <Filter>源文件\design_pattern</Filter>
     </ClCompile>
+    <ClCompile Include="design_pattern\use_case.cpp">
+      <Filter>源文件\design_pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="design_pattern\creational\singleton\singleton_usecase.cpp">
+      <Filter>源文件\design_pattern\creational\singleton</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>

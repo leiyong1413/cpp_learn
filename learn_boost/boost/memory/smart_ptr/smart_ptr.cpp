@@ -95,8 +95,65 @@ namespace learn_boost {
 
 #pragma endregion
 
+#pragma region 应用于工厂模式
+		// 1.工厂模式中 new是最常见的，通常会分配一个对象，然后返回对象的指针
+		// 但是这是一个很不安全的做法
+		// 怎么改造：返回一个shared_ptr 包装的智能指针
+
+		{
+			SimpleFactory sf;
+			auto ret_sp = SimpleFactory::create();
+			if (ret_sp) {
+				ret_sp->f1();
+				ret_sp->f2();
+			}
+
+			// AbstractInterface 析构函数是保护的，所以用户不能做任何对指针的破坏
+			// 即使使用ret_sp.get() 获取了原始指针
+			AbstractInterface *org_p = ret_sp.get();
+			// 下面代码在编译不过
+			// 因为org_p 析构函数是保护的
+			// delete org_p;
+		}
+#pragma endregion
+
+#pragma region 指针转型函数
+		// 当我们使用智能指针时，如果需要进行类层次上的上下行转换时，
+		// 可以使用boost::static_pointer_cast和boost::dynamic_pointer_cast
+		// 不同点：dynamic_cast在进行下行转换的时候（即基类到派生类）具有类型检查功能
+
+		// 上行转换 （派生类到基类）
+		boost::shared_ptr<ImpInterface> spImp;
+		boost::shared_ptr<AbstractInterface> spInf;
+		spImp = boost::make_shared<ImpInterface>();
+		spInf = boost::static_pointer_cast<AbstractInterface>(spImp);
+		// 执行base
+		spInf->des();
+
+		// 使用 boost::const_pointer_cast 普通转const
 
 
+		// shared_ptr<void> 能够存储void* 型的指针， 因此shared_ptr<void> 能够容纳任意类型的能力
+
+#pragma endregion
+
+#pragma region SharedArray
+		// 1. 包装 new[] 操作符在堆上分配的动态内存
+		// 2. 引用计数实现, 直到没有任何引用才释放
+		{
+			SharedArray();
+		}
+#pragma endregion
+
+#pragma region weakptr
+		// 1. 为配合shared_ptr 引入的一种智能指针
+		// 更像是shared_ptr的一种助手，因为它没有普通指针行为
+
+		// 作用：观测shared_ptr 的使用情况
+		{
+			WeakPtr();
+		}
+#pragma endregion
 
 
 
@@ -233,4 +290,76 @@ namespace learn_boost {
 		}
 	}
 
+	void SmartPtr::SharedArray(){
+		// 1. 构造函数必须是 new[] 的结果
+		boost::shared_array<int> sa(new int[100]);
+		// 判断是否唯一引用
+		if (sa.unique()) {
+			std::cout << " 唯一持有" << std::endl;
+		}
+		// 引用计数加1
+		shared_array<int> sa2 = sa;
+
+		// 不推荐 shared_array 使用 std::vector<shared_ptr> 代替
+	}
+
+	void SmartPtr::WeakPtr() {
+		// 构造函数：参数是一个shared_ptr 对象 , 因为weak_ptr 没有共享资源，它的构造不会引起指针引用计数增加
+
+		// 1. use_count() 得到 引用计数个数
+
+		// 2. expired() 判断是否失效指针 即 use_count() == 0 ,表示 被观察资源已经不存在
+
+		// 3. 没有 operator* 和 -> 不共享指针，不能操作资源 所以叫 "weak"
+
+
+		// 1.通过 lock() 函数 获取一个可用的 shared_ptr对象
+		// 如果 expired() == true 通过 lock() 得到一个存储空指针的 shared_ptr
+
+		boost::shared_ptr<int> sp(new int(10));
+		std::cout << "sp.use_count() == 1 " << sp.use_count() << std::endl;
+
+		boost::weak_ptr<int> wp(sp);
+		if (wp.use_count() == 1) {
+			std::cout << "wp.use_count() == 1 " << "yes" << std::endl;
+		}
+
+		if (!wp.expired())
+		{
+			// sp 的引用计数加1
+			shared_ptr<int> sp2 = wp.lock();
+			*sp2 = 100;
+			// sp 的引用计数加1 所以下面这里打印2
+			std::cout << sp2.use_count() << std::endl;
+		}
+
+		// 上面sp2退出作用域 sp 的引用计数减1 所以这里是1
+		std::cout << sp.use_count() << " " << *sp <<std::endl;
+
+		// shared_ptr 失效
+		sp.reset();
+
+		// 判断是否失效
+		if (wp.expired()) {
+			if (nullptr == wp.lock()) {
+				std::cout << "sp 失效 lock 获取值是nullptr " << std::endl;
+			}
+		}
+
+
+		// weak_ptr 的一个重要用途:
+		// 获得 this指针的 shared_ptr  , 使用对象能够生产shared_ptr 来管理自己
+		// 实现中一种惯用法：enable_shared_from_this<T> 
+		// 而不是通过 return this 这种方式
+		boost::shared_ptr<self_shared> sp_s = boost::make_shared<self_shared>(100);
+		// 引用计数1
+		std::cout << sp_s.use_count() << std::endl;
+		sp_s->print();
+		
+		// 获取sp_s 自己的指针 
+		boost::shared_ptr<self_shared> sp_s_2 = sp_s->shared_from_this();
+		// 上面代码引用计数加1 变为2
+		std::cout << sp_s_2.use_count() << std::endl;
+		sp_s_2->print();
+	}
 } // namespace learn_boost

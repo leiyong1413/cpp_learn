@@ -12,14 +12,14 @@ namespace learn_boost {
 	// 用列索引
 	enum UseCaseIndex
 	{
-		NONE = -1,
+		kNone = -1,
 
-		TIMER,			// 简单计时器 timer
-		PROGRESS,		// 自动计时器 progress_timer
-		DATE_TIME_GREGORIAN,	// DATE TIME 日期处理组件 gregorian
-		DATE_TIME_POSIX_TIME,	// DATE TIME 时间处理组件 posix
-		MEMORY_SMART_PTR,		// SMART PTR 智能指针 smart_ptr
-		COUNT
+		kTimer,			// 简单计时器 timer
+		kProgress,		// 自动计时器 progress_timer
+		kDateTimeGregorian,	// DATE TIME 日期处理组件 gregorian
+		kDateTimePosixTime,	// DATE TIME 时间处理组件 posix
+		kMemorySmartPtr,		// SMART PTR 智能指针 smart_ptr
+		kCount
 	};
 
 	class IRunUseCase {

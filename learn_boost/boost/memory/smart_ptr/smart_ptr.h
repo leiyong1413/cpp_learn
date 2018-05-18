@@ -12,6 +12,9 @@
 #include <boost/smart_ptr.hpp>
 using namespace boost;
 
+// 惯用法
+#include <boost/enable_shared_from_this.hpp>
+
 namespace learn_boost {
 
 	struct posix_file {
@@ -24,7 +27,62 @@ namespace learn_boost {
 		}
 	};
 
-	// 低精度计时器
+	// 
+	class AbstractInterface
+	{
+	public:
+		virtual void f1() = 0;
+		virtual void f2() = 0;
+
+		virtual void des() {
+			std::cout << "base" << std::endl;
+		}
+	protected:
+		// c++ 11 default
+		virtual ~AbstractInterface() = default;
+	};
+
+	class ImpInterface : public AbstractInterface
+	{
+	public:
+		// c++ 11 default
+		ImpInterface() = default;
+		virtual ~ImpInterface() = default;
+	public:
+		// c++ 11 override
+		virtual void f1() override {
+
+		}
+
+		virtual void f2() override {
+
+		}
+
+
+	};
+
+	class SimpleFactory {
+	public:
+		// 使用shared_ptr 的简单工厂模式实现
+		static shared_ptr<AbstractInterface> create() {
+			return boost::make_shared<ImpInterface>();
+		}
+	};
+
+	// 使用shared_ptr 自我管理的类
+	class self_shared : public boost::enable_shared_from_this<self_shared>
+	{
+	public:
+		self_shared(int n):x_(n){}
+		void print() {
+			std::cout << "self_shared:" << x_ << std::endl;
+		}
+	private:
+		int x_;
+	};
+
+
+	// 智能指针
 	class SmartPtr : public IRunUseCase {
 	public:
 		virtual std::string Description() const override;
@@ -34,6 +92,8 @@ namespace learn_boost {
 		void ScopedPtr();
 		void ScopedArray();
 		void SharedPtr();
+		void SharedArray();
+		void WeakPtr();
 	};
 
 } // namespace learn_boost
